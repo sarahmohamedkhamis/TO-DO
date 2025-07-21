@@ -6,27 +6,30 @@
 }
 
 body {
-  background: #f0f2f5;
+  background-image: 
+  linear-gradient( rgb(44, 110, 148),rgba(172, 31, 31, 0.808));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .layout {
-  background: #fff;
-  width: 90%;
-  max-width: 500px;
+  width: 100%;
+  max-width: 300px;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(223, 213, 213, 0.849);
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
 
 header {
-  background: #007bff;
-  color: white;
+  background: rgba(137, 43, 226, 0.123);
+  color: rgba(255, 255, 255, 0.993);
+  box-shadow: 0 0 20px rgba(223, 213, 213, 0.849);
   padding: 20px;
   text-align: center;
   position: relative;
@@ -44,6 +47,7 @@ header h1 {
 }
 
 main {
+  box-shadow: 0 0 15px rgba(134, 120, 120, 0.849);
   padding: 20px;
   flex: 1;
 }
@@ -71,24 +75,26 @@ main {
 }
 
 .input-section button:hover {
-  background: #0056b3;
+  background: #14477e4b;
 }
 
 #taskList {
   list-style: none;
+ 
 }
 
 #taskList li {
   padding: 10px;
-  border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
+   border: 3px solid #d4c9c93a;
+   border-radius:12px;
 }
 
 #taskList li.checked {
   text-decoration: line-through;
-  color: gray;
+  color: rgb(241, 238, 238);
 }
 
 #taskList li button {
@@ -101,11 +107,11 @@ main {
 }
 
 footer {
-  background: #f8f9fa;
+  box-shadow: 0 0 20px rgba(223, 213, 213, 0.849);
   text-align: center;
   padding: 12px;
   font-size: 14px;
-  color: #666;
+  color: #f5ecec;
 }
 
 @media (max-width: 600px) {
@@ -132,11 +138,12 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: rgb(247, 237, 241);
 }
 
 #taskList li span.checked {
   text-decoration: line-through;
-  color: gray;
+  color: rgba(247, 237, 241, 0.432);
 }
 
 .task-buttons {
@@ -154,7 +161,7 @@ footer {
 }
 
 .task-buttons .done:hover {
-  background-color: #218838 !important;
+  background-color: #21883749 !important;
 }
 
 .task-buttons .delete {
@@ -167,5 +174,5 @@ footer {
 }
 
 .task-buttons .delete:hover {
-  background-color: darkred;
+  background-color: rgba(136, 13, 13, 0.281) !important;
 }
